@@ -1,0 +1,36 @@
+/* Establece un fondo degradado */
+body {
+    background: linear-gradient(to bottom, #7e3c92, #2a5298); /* Degradado de azul oscuro a azul más claro */
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: white; /* Cambia el color del texto para que sea legible sobre el fondo degradado */
+    min-height: 100vh; /* Asegura que el degradado cubra toda la altura de la página */
+}
+
+/* Estilo para los títulos */
+h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los párrafos */
+p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Estilo para las imágenes */
+img {
+    width: 300px; /* Especifica el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que la imagen esté en una línea separada */
+    margin-bottom: 20px; /* Separa la imagen del contenido siguiente */
+}
+
+/* Contenedor para cada post */
+.post {
+    margin-bottom: 40px; /* Separa cada post verticalmente */
+    border-bottom: 1px solid white; /* Opcional: añade una línea divisoria entre posts */
+    padding-bottom: 20px; /* Espacio debajo de cada post */
+}
