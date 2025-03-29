@@ -6,3 +6,7 @@ from movies.models import Pelicula
 class MovieListView(ListView):
     model = Pelicula
     template_name = 'movie/movie_list.html'
+
+class MovieDetailView(DetailView):
+    model = Pelicula
+    template_name = 'movie/movie_detail.html'

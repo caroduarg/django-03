@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelicula</title>
+    <link rel="stylesheet" href="{% static 'css/peliculas.css' %}"> <!-- Vincula el archivo CSS -->
+</head>
+<body>
+    <h1>{{object.titulo}}</h1>
+    <img src="{{object.imagen.url}}" alt="A picture of {{object.titulo}}">
+    <p>{{object.descripcion}}</p>
+    <ul>
+        <li>{{object.año_lanzamiento}}</li>
+        <li>{{object.genero}}</li>
+        <li>{{object.duracion}}</li>
+        <li>{{object.director}}</li>
+        <li>{{object.actores_principales}}</li>
+        <li>{{object.clasificacion}}</li>
+    </ul>
+</body>
+</html>
